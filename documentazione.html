@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Catalogo dei Film</title>
+        <meta charset="UTF-8" />
+        <!-- responsivness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <!-- foglio di stile -->
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+        <!-- libreria di icone -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="style/style.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    </head>
+<body>
+    <header class="d-flex justify-content-center align-items-center">
+        <img src="img/final_image.png" id="headerImage">
+    </header>
+    <main>
+        <!-- navigation bar -->
+        <nav class="d-flex justify-content-start align-items-center">  
+            <a href="index.html" class="possibleActive" title="Link alla home">Home</a>
+            <a href="novita.html" class="possibleActive" title="Link al progetto">In arrivo!</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catalogo
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="possibleActive" href="list-items.html">Film</a></li>
+                  <li><a class="possibleActive" href="#">Serie Tv</a></li>
+                  <li><a class="possibleActive" href="#">Documentari</a></li>
+                </ul>
+              </div>
+            <a href="attori.html" class="possibleActive" title="Link agli attori">Attori</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Altro
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="possibleActive" href="mappaluoghi.html">Mappa dei luoghi</a></li>
+                    <li><a class="possibleActive" href="timeLine.html">Linea del tempo</a></li>
+                </ul>
+            </div>
+        </nav>
+            <div class="row">
+                <div class="col-lg-12">
+                  <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="documentazione.html">Project Plan</a></li>
+                  </ul>
+                </div>
+            </div>
+            <section style="padding-left: 1rem;">
+                <h5><strong>Indice</strong></h5>
+                <ol>
+                    <li><a href="#idea">Idea</a></li>
+                    <li>
+                        <a href="#brief">Brief</a>
+                        <ol>
+                            <li><a href="#finalita">Finalità</a></li>
+                            <li><a href="#pubblico">Pubblico</a></li>
+                            <li><a href="#accesso">Accesso</a></li>
+                            <li><a href="#contenuti-dati">Contenuti e dati</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#benchmark">Benchmark</a>
+                        <ol>
+                            <li><a href="#analisi-mercato">Analisi di mercato</a></li>
+                            <li><a href="#descrizione-concorrenti">Descrizione dei concorrenti</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#struttura">Struttura</a>
+                        <ol>
+                            <li><a href="#mappa-concettuale">Mappa concettuale</a></li>
+                            <li><a href="#schema-dipendenze">Schema delle dipendenze</a></li>
+                            <li><a href="#categorie-descrittive">Categorie descrittive</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#layout">Layout</a>
+                        <ol>
+                            <li><a href="#wireframe-index">Wireframe index</a></li>
+                            <li><a href="#wireframe-catalogo">Wireframe catalogo</a></li>
+                            <li><a href="#wireframe-livello-item">Wireframe livello item</a></li>
+                            <li><a href="#wireframe-raccolta-autori">Wireframe raccolta autori</a></li>
+                            <li><a href="#wireframe-raccolta-personaggi">Wireframe raccolta personaggi</a></li>
+                            <li><a href="#wireframe-scheda-personaggio">Wireframe scheda personaggio</a></li>
+                            <li><a href="#wireframe-scheda-autore">Wireframe scheda autore</a></li>
+                            <li><a href="#wireframe-pagina-luoghi">Wireframe pagina luoghi</a></li>
+                            <li><a href="#wireframe-pagina-login">Wireframe pagina login</a></li>
+                            <li><a href="#wireframe-pagina-personale">Wireframe pagina personale</a></li>
+                            <li><a href="#wireframe-elementi-salvati">Wireframe elementi salvati</a></li>
+                            <li><a href="#wireframe-recupero-password">Wireframe recupero password</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#usabilita">Usabilità</a>
+                        <ol>
+                            <li><a href="#usabilita-architettura">Norme di usabilità per l'architettura</a></li>
+                            <li><a href="#usabilita-tipografia">Norme di usabilità per aspetto e tipografia</a></li>
+                            <li><a href="#usabilita-colori">Norme di usabilità per colori, font e icone</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#servizi">Servizi</a>
+                        <ol>
+                            <li><a href="#browsing">Sistemi di browsing per valorizzare</a></li>
+                            <li><a href="#utilities">Utilities e tool per l'interazione</a></li>
+                            <li><a href="#strumenti-servizi">Strumenti, servizi, tool e metodi aggiuntivi</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#bibliografia">Bibliografia/Sitografia</a></li>
+                </ol>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <section id="idea">
+                            <h2 class="mt-3">1. Idea (Abstract)</h2>
+                            <p>Il progetto si propone di realizzare una collezione digitale interattiva dedicata ai film di Christopher Nolan, offrendo un'esperienza di esplorazione approfondita e intuitiva. L’obiettivo principale è fornire un archivio strutturato in cui gli utenti possano scoprire dettagli sui film,
+                                esplorare i luoghi di ripresa e seguire l'evoluzione della carriera di Nolan attraverso una linea temporale interattiva.
+                            </p>                        
+                        </section>
+                        <section id="brief">
+                            <h2 class="mt-3">2. Brief</h2>
+                            <div style="padding: 10px;">
+                                <section id="finalita">
+                                    <h3 class="mt-3">2.1 Finalità</h3>
+                                    <p>Questo progetto nasce con l'obiettivo di creare una collezione digitale interattiva dedicata ai film di Christopher Nolan, offrendo agli utenti un’esperienza immersiva e approfondita. La piattaforma permetterà di navigare tra le opere del regista, accedendo a informazioni dettagliate su trama, cast, tecniche di regia e impatto culturale. Sarà possibile esplorare i luoghi di ripresa tramite una mappa interattiva, che localizza le principali scene girate nel mondo, e seguire la linea temporale della sua carriera per comprendere l’evoluzione del suo stile.
+                                        Per facilitare l’esplorazione dei contenuti, la piattaforma offrirà un sistema avanzato di navigazione e filtraggio che consentirà agli utenti di cercare film in base all’anno di uscita, agli attori e alle location utilizzate.</p>
+                                </section>
+                                <section id="pubblico">
+                                    <h3 class="mt-3">2.2 Pubblico</h3>
+                                    <p>Il sito è pensato per un pubblico eterogeneo, con particolare attenzione agli appassionati di cinema che vogliono approfondire la filmografia di Christopher Nolan, ai studenti e studiosi interessati ad analizzare la regia, la sceneggiatura e le tecniche cinematografiche, ai curiosi e viaggiatori desiderosi di esplorare le location in cui sono stati girati i film e ai collezionisti e fan alla ricerca di una risorsa completa per catalogare le opere del regista.
+                                    Gli utenti potranno accedere liberamente alla piattaforma per consultare i contenuti.</p>
+                                </section>
+                                <section id="accesso">
+                                    <h3 class="mt-3">2.3 Accesso</h3>
+                                    <p>La piattaforma sarà progettata per garantire un’esperienza fluida e accessibile su qualsiasi dispositivo, che si tratti di computer, smartphone o tablet. Grazie all’utilizzo di un design responsivo basato su Bootstrap, il layout si adatterà automaticamente alle diverse dimensioni dello schermo, assicurando una navigazione chiara e intuitiva.
+
+                                        Per mantenere prestazioni elevate, il sito sarà ottimizzato per garantire tempi di caricamento rapidi anche in presenza di immagini e contenuti multimediali. L’accessibilità sarà una priorità, con un’interfaccia pensata per facilitare l’interazione e rendere la piattaforma fruibile anche agli utenti meno esperti.</p>
+                                </section>
+                                <section id="contenuti-dati">
+                                    <h3 class="mt-3">2.4 Contenuti e dati</h3>
+                                    <p>La collezione digitale presenterà una vasta raccolta di contenuti multimediali, con schede dettagliate per ogni film che includeranno informazioni su cast, produzione, trama, tecniche di ripresa e impatto culturale. Saranno disponibili immagini ottimizzate tratte dalle pellicole, poster ufficiali e fotografie di backstage, mentre una mappa interattiva dei luoghi di ripresa fornirà coordinate precise e descrizioni delle scene girate.
+                                        Un altro elemento chiave del progetto sarà la timeline interattiva, che mostrerà l’evoluzione della carriera di Nolan e le uscite dei suoi film. Inoltre, sarà presente una sezione dedicata al regista, con approfondimenti sulla sua visione artistica, il suo metodo di lavoro e i suoi collaboratori più frequenti. 
+                                       </p>
+                                </section>
+                            </div>
+                        </section>
+                        <section id="benchmark">
+                            <h2 class="mt-3">3. Benchmark</h2>
+                            <div style="padding: 10px;">
+                                <section id="analisi-mercato">
+                                    <h3 class="mt-3">3.1 Analisi di mercato</h3>
+                                    <p>Attualmente esistono diverse piattaforme online dedicate al cinema e ai registi, ma poche offrono un'esperienza completa e interattiva focalizzata interamente sulla filmografia di Christopher Nolan. La maggior parte dei siti si limita a presentare schede filmografiche statiche, recensioni o approfondimenti critici senza fornire strumenti di navigazione avanzati che permettano un'esplorazione più coinvolgente e approfondita.
+                                        Un'altra limitazione comune è la mancanza di un sistema di browsing innovativo, che permetta agli utenti di filtrare e analizzare i film in base a criteri personalizzati come le location di ripresa, le tematiche ricorrenti o le collaborazioni più frequenti del regista. Inoltre, la navigazione su molti di questi siti risulta frammentata e spesso poco intuitiva, rendendo difficile un'esperienza immersiva per l’utente.                                        
+                                        Il progetto si propone di colmare queste lacune offrendo una piattaforma moderna e interattiva, che riunisca in un unico spazio tutti gli elementi della cinematografia di Nolan. Grazie a un'interfaccia intuitiva e strumenti interattivi come una mappa delle location e una timeline dinamica, il sito offrirà un'esperienza esplorativa unica, pensata per cinema lovers, studiosi e curiosi.</p>
+                                </section>
+                                <section id="descrizione-concorrenti">
+                                    <h3 class="mt-3">3.2 Descrizione dei concorrenti</h3>
+                                    <ul>
+                                        <li>
+                                            <strong>IMDb - Christopher Nolan Page</strong>
+                                            <p><a href="https://www.imdb.com/name/nm0634240/">https://www.imdb.com/name/nm0634240/</a></p>
+                                            <p>Descrizione: IMDb offre una pagina dedicata a Christopher Nolan con informazioni sui suoi film, il cast e alcuni dati tecnici di produzione. Sono presenti recensioni degli utenti e una sezione con le curiosità sui suoi lavori.
+                                            Punti di forza: Database estremamente ricco, aggiornamenti costanti e sistema di rating basato sulle recensioni degli utenti.
+                                            Limiti: Interfaccia generica, assenza di strumenti avanzati di navigazione per esplorare connessioni tra i film, location o tematiche ricorrenti.</p>
+                                        </li>
+                                        <li>
+                                            <strong>The Christopher Nolan Wiki</strong>
+                                            <p><a href="https://christophernolan.fandom.com/wiki/Christopher_Nolan_Wiki">https://christophernolan.fandom.com/wiki/Christopher_Nolan_Wiki</a></p>
+                                            <p>Descrizione: Una piattaforma collaborativa in stile wiki, che raccoglie informazioni dettagliate sulla carriera di Nolan, i suoi film e i suoi collaboratori.
+                                            Punti di forza: Grande quantità di informazioni, aggiornamenti frequenti e struttura enciclopedica.
+                                            Limiti: Struttura testuale che non facilita un'esplorazione fluida, mancanza di interattività e strumenti di browsing avanzati.</p>
+                                        </li>
+                                        <li>
+                                            <strong>The Locations Guide - Nolan’s Films</strong>
+                                            <p><a href="https://www.thelocationsguide.com">https://www.thelocationsguide.com</a></p>
+                                            <p>Descrizione: Un sito che raccoglie informazioni sulle location cinematografiche, inclusi alcuni film di Nolan, con mappe e immagini delle riprese.
+                                            Punti di forza: Approfondimenti dettagliati sulle location di ripresa e mappe geolocalizzate.
+                                            Limiti: Copertura limitata ai luoghi di ripresa, senza approfondimenti su trama, cast o analisi critica delle opere.</p>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </section>
+                        <section id="Struttura">
+                            <h2 class="mt-3">4. Struttura</h2>
+                            <div style="padding: 10px;">
+                                <section id="mappa-concettuale">
+                                    <h3 class="mt-3">4.1 Mappa concettuale</h3>
+                                    <img src="img/mappaConcettuale.png" alt="">
+                                    <p class="mt-4">Il progetto ha l’obiettivo di rappresentare in modo strutturato e approfondito l’universo cinematografico di Christopher Nolan, esplorandolo attraverso diversi aspetti fondamentali della sua carriera.
+
+                                        Uno dei fulcri principali è il Catalogo, che raccoglie tutte le opere del regista, suddivise in Film, Serie TV e Documentari, offrendo così una visione completa e organizzata della sua produzione. Particolare attenzione viene dedicata anche alle Novità, che permettono di restare aggiornati sui progetti più recenti e futuri del regista.
+                                        
+                                        Un altro elemento chiave riguarda gli Attori con cui Nolan ha collaborato, evidenziando le figure ricorrenti e il loro impatto nella costruzione dell’identità stilistica e narrativa dei suoi lavori.
+                                        
+                                        L’ambientazione è un aspetto cruciale del cinema di Nolan, motivo per cui i Luoghi sono classificati in due categorie: Immaginari, come i mondi costruiti in opere come Inception o Interstellar, e Terrestri, ovvero ambientazioni reali scelte con cura per rafforzare il contesto delle narrazioni.
+                                        
+                                        Infine, la Linea del tempo consente di collocare i film girati negli anni, offrendo una prospettiva evolutiva sulla filmografia del regista, con particolare attenzione ai cambiamenti stilistici, narrativi e tematici nel corso del tempo.
+                                        
+                                        Questa mappa concettuale aggiornata fornisce una visione integrata del lavoro di Christopher Nolan, facilitando l’analisi della sua produzione artistica, delle collaborazioni, degli scenari narrativi e della sua evoluzione cinematografica.
+                                    </p>
+                                </section>
+                                <section id="schema-dipendenze">
+                                    <h3 class="mt-3">4.2 Schema Dipendenze</h3>
+                                    <img src="img/mappaDipendenze.png" alt="">
+                                    <ul class="mt-4">
+                                        <li>
+                                            <p>
+                                                <strong>Il progetto è strutturato intorno a una Homepage</strong>, che rappresenta il punto di accesso principale al sito e consente una navigazione semplice e immediata verso le tre macro-sezioni principali: <strong>Catalogo</strong>, <strong>Attori</strong> e <strong>Altro</strong>.
+                                            </p>
+                                            <h4>Catalogo</h4>
+                                            <p>
+                                                È la sezione più ricca, dedicata alla raccolta completa delle opere di Christopher Nolan, suddivise in <strong>Film</strong>, <strong>Serie TV</strong>, <strong>Documentari</strong> e <strong>Novità</strong>.
+                                                Ogni contenuto selezionato porta a una pagina dedicata che include descrizioni dettagliate, informazioni tecniche, immagini promozionali e trailer.
+                                                Le <strong>Novità</strong> si concentrano soprattutto sui progetti futuri o in fase di sviluppo, fornendo articoli o trailer aggiornati, spesso accompagnati da link esterni per ulteriori approfondimenti.
+                                            </p>
+                                            <h4>Attori</h4>
+                                            <p>
+                                                Questa sezione propone una lista degli attori più noti che hanno collaborato con Nolan. Selezionando un attore, si accede a una scheda personale contenente informazioni biografiche, i ruoli interpretati nei film del regista e dettagli sul rapporto professionale tra l’attore e il regista.
+                                            </p>
+                                            <h4>Altro</h4>
+                                            <p>
+                                                In questa sezione si trovano funzionalità extra che arricchiscono l’esperienza dell’utente:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Una <strong>Mappa interattiva</strong> dei luoghi iconici in cui sono stati girati i film, utile per esplorare l’aspetto geografico e scenografico dell’opera di Nolan.
+                                                </li>
+                                                <li>
+                                                    Una <strong>Linea del tempo</strong> che colloca le date di uscita dei film in ordine cronologico, permettendo all’utente di osservare l’evoluzione stilistica e narrativa del regista nel corso degli anni.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section id="categorie-descrittive">
+                                    <h3 class="mt-3">4.3 Categorie descrittive</h3>
+                                    <p class="mt-4">
+                                        <ul>
+                                            <li><strong>Titolo:</strong> The Prestige</li>
+                                            <li><strong>Regista:</strong> Christopher Nolan</li>
+                                            <li><strong>Anno di uscita:</strong> 2006</li>
+                                            <li><strong>Cast principale:</strong> Christian Bale, Hugh Jackman, Scarlett Johansson</li>
+                                            <li><strong>Genere:</strong> Drammatico, Thriller, Fantascienza</li>
+                                            <li><strong>Durata:</strong> 130 minuti</li>
+                                            <li><strong>Lingua originale:</strong> Inglese</li>
+                                            <li><strong>Produzione:</strong> Touchstone Pictures, Warner Bros.</li>
+                                            <li><strong>Distribuzione:</strong> Warner Bros. Pictures</li>
+                                            <li><strong>Colonna sonora:</strong> David Julyan</li>
+                                            <li><strong>Trailer ufficiale:</strong> <a href="https://www.youtube.com">YouTube - The Prestige</a></li>
+                                            <li><strong>Pubblico consigliato:</strong> Dai 14 anni in su</li>
+                                            <li><strong>Trama:</strong>
+                                                <p>
+                                                    Nell’Inghilterra vittoriana, due giovani illusionisti, Robert Angier e Alfred Borden, iniziano la loro carriera come amici e collaboratori, ma un tragico incidente li trasforma in acerrimi rivali. Ossessionati dal desiderio di superarsi a vicenda, i due maghi intraprendono una battaglia fatta di inganni, sabotaggi e sacrifici estremi.
+                                                    Quando Borden presenta il suo straordinario trucco, Il Trasporto Umano, Angier diventa ossessionato nel cercare di svelarne il segreto. La sua ricerca lo conduce fino al misterioso scienziato Nikola Tesla, il cui esperimento rivoluzionario potrebbe cambiare per sempre il mondo della magia… e la vita stessa.
+                                                    The Prestige esplora i limiti dell’ambizione, il prezzo dell’ossessione e il confine tra realtà e illusione, portando i protagonisti verso un finale sconvolgente.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </section>
+                            </div>
+
+                        </section>    
+                        <section id="usabilità">
+                            <h2 class="mt-3">6. Usabilità</h2>
+                            <div style="padding: 10px;">
+                                <section id="usabilita-architettura">
+                                    <h3 class="mt-3">6.1 Norme di usabilità per l'architettura</h3>
+                                    <p class="mt-4">
+                                        Il sito è strutturato in modo semplice e intuitivo. La navbar, posizionata in alto, consente un accesso rapido alle sezioni principali (Home, Attori, Catalogo, ecc.), anche se non è fissa (sticky): questo significa che scompare durante lo scroll, ma la struttura lineare del sito e la presenza di breadcrumbs nelle pagine interne garantiscono comunque un buon orientamento per l’utente.
+                                        Il layout, basato su Bootstrap, è responsivo e si adatta perfettamente a dispositivi di diverse dimensioni, assicurando un'esperienza coerente sia su desktop che su mobile. Le sezioni sono ben suddivise e facilmente scansionabili, contribuendo a un'esperienza di navigazione fluida.
+                                    </p>
+                                </section>
+                                <section id="usabilita-tipografia">
+                                    <h3 class="mt-3">6.2 Norme di usabilità per l'aspetto e la tipografia</h3>
+                                    <p class="mt-4">
+                                        Il sito utilizza due font principali:
+                                        Roboto per il corpo del testo, scelto per la sua leggibilità;
+                                        Poppins per i titoli delle schede film, con un tocco moderno e cinematografico.
+                                        Il testo bianco su sfondo nero garantisce un contrasto elevato e quindi un'ottima leggibilità. Le intestazioni usano un tono antiquewhite, ben visibile ma non invasivo. Le dimensioni dei caratteri sono proporzionate, e l’allineamento centrale o giustificato dei contenuti principali aiuta la lettura.
+                                        Gli effetti hover su link e pulsanti migliorano l’interazione, fornendo un chiaro feedback visivo all’utente.
+                                    </p>
+                                </section>
+                                <section id="usabilita-colori">
+                                    <h3 class="mt-3">6.3 Norme di usabilità per colori, font e icone</h3>
+                                    <p class="mt-4">
+                                        La palette cromatica scelta è minimalista ma efficace: nero, bianco, grigio e accenti blu e gialli, in linea con uno stile elegante e sobrio, perfettamente adatto al tema “Christopher Nolan”.
+                                        Le icone di Bootstrap e Font Awesome sono utilizzate in modo coerente per migliorare la comunicazione visiva e l’accessibilità, ad esempio per evidenziare premi, social e sezioni specifiche.
+                                    </p>
+                                </section>
+                            </div>
+
+                        </section> 
+                        <section id="servizi">
+                            <h2 class="mt-3">7. Servizi</h2>
+                            <div style="padding: 10px;">
+                                <section id="browsing">
+                                    <h3 class="mt-3">7.1 Sistemi di browsing per valorizzare</h3>
+                                    <p class="mt-4">
+                                        Il catalogo dei film è progettato per offrire un'esperienza di esplorazione semplice, efficace e visivamente coinvolgente. Gli utenti possono navigare i contenuti grazie a diversi strumenti di browsing:
+                                        Barra di ricerca: consente di filtrare i film per titolo, facilitando l’accesso immediato alle opere desiderate.
+                                        Ordinamento dinamico: l’utente può ordinare i film per titolo o per anno di uscita, tramite appositi pulsanti.
+                                        Navigazione per sezioni: il menu di navigazione offre accesso diretto a sezioni tematiche come Catalogo Film, Attori, Mappa dei Luoghi e Linea del Tempo.
+                                        Breadcrumbs: inserite nelle sottopagine per aiutare l’utente a comprendere sempre la propria posizione nel sito.
+                                        Card visive: ogni film è rappresentato con un’immagine, titolo, descrizione breve e anno, in modo da fornire un colpo d’occhio completo e intuitivo.
+                                    </p>
+                                </section>
+                                <section id="utilities">
+                                    <h3 class="mt-3">7.2 Utilities e tool per l’interazione</h3>
+                                    <p class="mt-4">
+                                        Per rendere l’esperienza utente più interattiva e coinvolgente, il sito include diversi strumenti e componenti:
+                                        Pulsanti dinamici: i bottoni (es. ordina, dettagli) cambiano stile al passaggio del mouse, fornendo un chiaro feedback visivo.
+                                        Card interattive: i film sono mostrati in card che reagiscono all’hover (sfocatura immagine + comparsa del pulsante “Dettagli”).
+                                        Effetti di transizione: molte componenti (card, bottoni, immagini) includono transizioni fluide che migliorano la percezione dell’interfaccia.
+                                        Mappa interattiva: per esplorare i luoghi iconici delle riprese cinematografiche di Nolan.
+                                        Linea del tempo: una sezione cronologica per visualizzare l’evoluzione delle opere nel tempo.
+                                        Paginazione: utilizzata per gestire in modo ordinato l’elenco dei film nel catalogo, migliorando la performance e l’organizzazione dei contenuti.
+                                    </p>
+                                </section>
+                                <section id="strumenti-servizi">
+                                    <h3 class="mt-3">7.3 Sviluppi futuri</h3>
+                                    <p class="mt-4">
+                                        Il sito è pensato per essere espanso e migliorato con nuove funzionalità che arricchiscano ulteriormente l’esperienza utente. Tra gli sviluppi previsti:
+                                        Sezione Approfondimenti: contenuti esclusivi su tematiche ricorrenti nei film, spiegazioni dei finali e analisi registiche.
+                                        Area Curiosità: uno spazio dedicato ai retroscena dei film, aneddoti e connessioni nascoste.
+                                        Sezione Commenti/Community: possibilità per gli utenti di interagire, commentare i film e scambiarsi opinioni e teorie.
+                                        Accessibilità migliorata: introduzione di modalità ad alto contrasto e supporto screen reader per utenti con disabilità visive.
+                                        Integrazione multimediale: trailer, interviste e spezzoni video ufficiali.
+                                    </p>
+                                </section>
+                            </div>
+                        </section>
+                        <section id="bibliografia">
+                            <h3 class="mt-3">8 Bibliografia</h3>
+                            <div style="padding: 10px;">
+                                <p>
+                                    <strong>Strumenti e risorse utilizzate:</strong>
+                                    <ul>
+                                        <li>Mappa interattiva realizzata con <a href="https://leafletjs.com" target="_blank">leaflet</a></li>
+                                        <li>Wireframes creati con un ipad</li>
+                                        <li>Mappa concettuale e schema del sito realizzati con <a href="https://app.diagrams.net/" target="_blank">Diagrams.net (draw.io)</a></li>
+                                        <li>Font principale utilizzato: <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto – Google Fonts</a></li>
+                                        <li>Codice HTML, CSS e JS sviluppato con <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
+                                        <li>Sito pubblicato con <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    <strong>Testi e immagini:</strong>
+                                    <ul>
+                                        <li><strong>Testi:</strong> Tutti i testi sono stati redatti manualmente e si basano su fonti attendibili, tra cui:
+                                            <ul>
+                                                <li>Il sito ufficiale di Christopher Nolan su <a href="https://www.imdb.com/" target="_blank">IMDb</a></li>
+                                                <li>Articoli da riviste cinematografiche online (Esquire, Variety, The Guardian, ecc.)</li>
+                                                <li>Wikipedia e interviste verificate al regista</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Immagini:</strong> Le immagini utilizzate nel sito provengono da fonti pubbliche, ufficiali o promozionali, e rappresentano locandine, frame e personaggi dei film diretti da Christopher Nolan. In caso di immagini promozionali, sono state utilizzate a scopo educativo, non commerciale.</li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    <strong>Fonti per layout e progettazione:</strong>
+                                    <ul>
+                                        <li>Slide e materiali del corso di Informatica Umanistica della Prof.ssa Francesca Tomasi – Università di Bologna (piattaforma Virtuale)</li>
+                                        <li>Sito di esempio "Progetto Dylan Dog" realizzato da Alessandro Rocchi</li>
+                                        <li>Documentazione ufficiale di <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> e <a href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </section>     
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <section class="container-fluid text-light py-3 bg-dark">
+            <div class="row flex">
+                <!-- Disclaimer -->
+                <div class="col-md-6 mb-3">
+                    <p class="mb-2">
+                        Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici, sotto la tutela delle leggi internazionali sul copyright/trademark.
+                    </p>
+                    <p class="mb-0">
+                        Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.
+                    </p>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="col-md-3 mb-3 text-center">
+                    <h5 class="mb-3">Seguici</h5>
+                    <a href="#" class="text-light me-3">
+                        <i class="bi bi-facebook fs-4"></i>
+                    </a>
+                    <a href="#" class="text-light me-3">
+                        <i class="bi bi-twitter fs-4"></i>
+                    </a>
+                    <a href="#" class="text-light me-3">
+                        <i class="bi bi-instagram fs-4"></i>
+                    </a>
+                    <a href="#" class="text-light">
+                        <i class="bi bi-youtube fs-4"></i>
+                    </a>
+                </div>
+    
+                <!-- Link Utili -->
+                <div class="col-md-3 mb-3 text-center">
+                    <h5 class="mb-3">Link Utili</h5>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mx-2">
+                            <a class="text-light" href="#">Credits</a>
+                        </li>
+                        <li class="list-inline-item mx-2">
+                            <a class="text-light" href="documentazione.html">Web Project Plan</a>
+                        </li>
+                        <li class="list-inline-item mx-2">
+                            <a class="text-light" href="#">Informazioni</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+      </footer>
+</body>
+</html>    
+

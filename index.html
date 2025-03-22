@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+        <title>Film di Cristopher Nolan</title>
+        <meta charset="UTF-8" />
+        <!-- responsivness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+        
+        <!-- Dublin Core -->
+        <meta name="DC.title" content="Film di Christopher Nolan">
+        <meta name="DC.creator" content="Antonio Lombardi">
+        <meta name="DC.subject" content="Christopher Nolan, Film, Cinema, Registi">
+        <meta name="DC.description" content="Un sito dedicato ai film di Christopher Nolan, con informazioni su cast, premi e riconoscimenti.">
+        <meta name="DC.publisher" content="Git hub pages">
+        <meta name="DC.date" content="2025-03-11">
+        <meta name="DC.type" content="Sito web">
+        <meta name="DC.language" content="it">
+
+        <!-- foglio di stile -->
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+        <!-- libreria di icone -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="js/main.js "></script>   
+        <link rel="stylesheet" href="style/style.css"> 
+    </head>
+  <body>
+    <header class="d-flex justify-content-center align-items-center">
+      <img src="img/final_image.png" id="headerImage">
+    </header>
+    <main>
+      <!-- navigation bar -->
+      <nav class="d-flex justify-content-start align-items-center">  
+          <a href="index.html" class="possibleActive active" title="Link alla home">Home</a>
+          <a href="novita.html" class="possibleActive" title="Link al progetto">In arrivo!</a>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              Catalogo
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="possibleActive" href="list-items.html">Film</a></li>
+              <li><a class="possibleActive" href="#">Serie Tv</a></li>
+              <li><a class="possibleActive" href="#">Documentari</a></li>
+            </ul>
+          </div>
+          <a href="attori.html" class="possibleActive" title="Link agli attori">Attori</a>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Altro
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="possibleActive" href="mappaluoghi.html">Mappa dei luoghi</a></li>
+            <li><a class="possibleActive" href="timeLine.html">Linea del tempo</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <img src="img/mag-02Nolan-t_CA1-superJumbo.jpg" id="crisImage" alt="">
+          </div>
+          <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center align-items-center p-3">
+            <h2>Chi è Christopher Nolan</h2>
+            <p id="text">
+              Sir Christopher Edward Nolan, nato a Londra il 30 luglio 1970, è un regista, sceneggiatore e produttore britannico, riconosciuto come uno dei registi più influenti del XXI secolo.
+               I suoi film hanno incassato complessivamente 6,1 miliardi di dollari, posizionandolo tra i più grandi dal punto di vista commerciale. 
+              Tra le sue opere più celebri spicca la trilogia del cavaliere oscuro (composta da Batman Begins, Il cavaliere oscuro e Il cavaliere oscuro – Il ritorno), considerata una delle migliori reinterpretazioni del genere supereroistico. 
+              Nolan ha inoltre dimostrato una notevole versatilità, esplorando diversi generi: il neo-noir con Memento, il thriller psicologico con Insomnia e The Prestige, la fantascienza con Inception e Interstellar, il film di guerra con Dunkirk e lo spionaggio con Tenet.
+               Dopo Tenet, ha stretto un nuovo accordo con Universal Pictures, con cui ha realizzato l’epopea biografica Oppenheimer (2023), che gli è valsa 7 premi Oscar all’edizione del 2024, tra cui miglior film e miglior regista.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6 d-flex justify-content-center align-items-center">
+            <h1>Riconoscimenti</h1>
+          </div>
+          <div class="col-lg-6">
+            <h4>Oscar <i class="fa fa-trophy"></i></h4>
+            <ul id="text">
+                <li><span id="data">2002</span> - Candidatura per la migliore sceneggiatura originale per Memento</li>
+                <li><span id="data">2011</span> - Candidatura per il miglior film per Inception</li>
+                <li><span id="data">2011</span> - Candidatura per la migliore sceneggiatura originale per Inception</li>
+                <li><span id="data">2018</span> - Candidatura per il miglior film per Dunkirk</li>
+                <li><span id="data">2018</span> - Candidatura per il miglior regista per Dunkirk</li>
+                <li><span id="data">2024</span> - Miglior film per Oppenheimer</li>
+                <li><span id="data">2024</span> - Miglior regista per Oppenheimer</li>
+                <li><span id="data">2024</span> - Candidatura per la migliore sceneggiatura non originale per Oppenheimer</li>
+            </ul>
+            <h4>Onorificenze <i class="fa fa-star"></i></h4>
+            <ul id="text">
+                <li><span id="data">28 dicembre 2018</span> - Commendatore dell'Ordine dell'Impero Britannico</li>
+                <li><span id="data">18 dicembre 2024</span> - Knigth Bachelor</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-5 mb-5">
+          <div class="col-lg-6">
+            <ul id="text">
+                <p>Christopher Nolan è un regista che ama girare in pellicola, preferendo il 35mm al digitale. Il regista ha una predilezione per le scene d'azione realizzate con effetti speciali pratici, evitando l'uso di CGI. Nolan è noto per la sua abilità nel creare film complessi e stratificati, spesso caratterizzati da trame non lineari. Il regista ha una collaborazione artistica con il compositore Hans Zimmer, che ha curato le colonne sonore di molti dei suoi film. Nolan è un grande appassionato di cinema, con una predilezione per i film di Stanley Kubrick e Alfred Hitchcock.</p>
+            </ul>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center align-items-center">
+            <h1>Curiosità</h1>
+
+          </div>
+      </div>
+    </main>
+
+    <footer>
+      <section class="container-fluid text-light py-3 bg-dark">
+          <div class="row flex">
+              <!-- Disclaimer -->
+              <div class="col-md-6 mb-3">
+                  <p class="mb-2">
+                      Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici, sotto la tutela delle leggi internazionali sul copyright/trademark.
+                  </p>
+                  <p class="mb-0">
+                      Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.
+                  </p>
+              </div>
+  
+              <!-- Social Media -->
+              <div class="col-md-3 mb-3 text-center">
+                  <h5 class="mb-3">Seguici</h5>
+                  <a href="#" class="text-light me-3">
+                      <i class="bi bi-facebook fs-4"></i>
+                  </a>
+                  <a href="#" class="text-light me-3">
+                      <i class="bi bi-twitter fs-4"></i>
+                  </a>
+                  <a href="#" class="text-light me-3">
+                      <i class="bi bi-instagram fs-4"></i>
+                  </a>
+                  <a href="#" class="text-light">
+                      <i class="bi bi-youtube fs-4"></i>
+                  </a>
+              </div>
+  
+              <!-- Link Utili -->
+              <div class="col-md-3 mb-3 text-center">
+                  <h5 class="mb-3">Link Utili</h5>
+                  <ul class="list-inline mb-0">
+                      <li class="list-inline-item mx-2">
+                          <a class="text-light" href="#">Credits</a>
+                      </li>
+                      <li class="list-inline-item mx-2">
+                          <a class="text-light" href="documentazione.html">Web Project Plan</a>
+                      </li>
+                      <li class="list-inline-item mx-2">
+                          <a class="text-light" href="#">Informazioni</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+    </footer>
+  
+
+  </body>
+</html>

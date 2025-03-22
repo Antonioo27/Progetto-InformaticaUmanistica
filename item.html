@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Catalogo dei Film</title>
+        <meta charset="UTF-8" />
+        <!-- responsivness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+        <!-- foglio di stile -->
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+        <!-- libreria di icone -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="style/style.css"> 
+    </head>
+<body >
+    <header class="d-flex justify-content-center align-items-center">
+        <img src="img/final_image.png" id="headerImage">
+    </header>
+    <main class="container-fluid mt-5 position-relative">
+
+        <!-- navigation bar -->
+        <nav class="d-flex justify-content-start align-items-center">  
+            <a href="index.html" class="possibleActive active" title="Link alla home">Home</a>
+            <a href="novita.html" class="possibleActive" title="Link al progetto">In arrivo!</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catalogo
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="possibleActive" href="list-items.html">Film</a></li>
+                  <li><a class="possibleActive" href="#">Serie Tv</a></li>
+                  <li><a class="possibleActive" href="#">Documentari</a></li>
+                </ul>
+              </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Servizi
+            </button>
+            <ul class="dropdown-menu">
+            <li><a class="possibleActive" href="mappaluoghi.html">Mappa dei luoghi</a></li>
+            <li><a class="possibleActive" href="timeLine.html">Linea del tempo</a></li>
+            <li><a class="possibleActive" href="#">Parole chiave</a></li>
+            </ul>
+        </div>
+        </nav>
+        <div class="row">
+            <div class="col-lg-12">
+              <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="list-items.html">Catalogo</a></li>
+                <li><a href="item.html">The prestige</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/ThePrestige_10YearsLater.webp" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/the-prestige-iris.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/image-w1280.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="film-details">
+                    <h2>Dettagli del film</h2>
+                    <p><strong>Anno di uscita:</strong> 2006</p>
+                    <p><strong>Regia:</strong> Christopher Nolan</p>
+                    <p><strong>Cast:</strong> Christian Bale, Hugh Jackman, Scarlett Johansson</p>
+                    <p><strong>Trama:</strong>Nell’Inghilterra vittoriana, due giovani illusionisti, Robert Angier e Alfred Borden, iniziano la loro carriera come amici e collaboratori, ma un tragico incidente li trasforma in acerrimi rivali. Ossessionati dal desiderio di superarsi a vicenda, i due maghi intraprendono una battaglia senza esclusione di colpi, fatta di inganni, sabotaggi e sacrifici estremi.
+
+                        Quando Borden presenta il suo straordinario trucco, Il Trasporto Umano, Angier diventa ossessionato nel cercare di svelarne il segreto. La sua ricerca lo conduce fino al misterioso scienziato Nikola Tesla, il cui esperimento rivoluzionario potrebbe cambiare per sempre il mondo della magia… e la vita stessa.
+                        
+                        Ma in un gioco di prestigio, la verità è sempre celata agli occhi del pubblico. Tra colpi di scena magistrali e un crescendo di tensione, The Prestige esplora i limiti dell’ambizione, il prezzo dell’ossessione e il confine tra realtà e illusione, portando i protagonisti verso un finale sconvolgente e indimenticabile.
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="list-items.html" class="btn-back">Torna al Catalogo</a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <h2>Trailer Ufficiale</h2>
+                    <div class="ratio ratio-4x3">
+                        <iframe width="480" height="360" 
+                            src="https://www.youtube.com/embed/o4gHCmTQDVI" 
+                            title="The Prestige - Trailer Ufficiale" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            
+            
+    </main>
+
+    <footer>
+        <section class="container-fluid text-light py-3 bg-dark">
+            <div class="row flex">
+                <!-- Disclaimer -->
+                <div class="col-md-6 mb-3">
+                    <p class="mb-2">
+                        Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici, sotto la tutela delle leggi internazionali sul copyright/trademark.
+                    </p>
+                    <p class="mb-0">
+                        Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.
+                    </p>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="col-md-3 mb-3 text-center">
+                    <h5 class="mb-3">Seguici</h5>
+                    <a href="#" class="text-light me-3">
+                        <i class="bi bi-facebook fs-4"></i>
+                    </a>
+                    <a href="#" class="text-light me-3">
+                        <i class="bi bi-twitter fs-4"></i>
+                    </a>
+                    <a href="#" class="text-light me-3">
+                        <i class="bi bi-instagram fs-4"></i>
+                    </a>
+                    <a href="#" class="text-light">
+                        <i class="bi bi-youtube fs-4"></i>
+                    </a>
+                </div>
+    
+                <!-- Link Utili -->
+                <div class="col-md-3 mb-3 text-center">
+                    <h5 class="mb-3">Link Utili</h5>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mx-2">
+                            <a class="text-light" href="#">Credits</a>
+                        </li>
+                        <li class="list-inline-item mx-2">
+                            <a class="text-light" href="documentazione.html">Web Project Plan</a>
+                        </li>
+                        <li class="list-inline-item mx-2">
+                            <a class="text-light" href="#">Informazioni</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

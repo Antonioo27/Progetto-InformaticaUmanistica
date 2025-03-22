@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Catalogo dei Film</title>
+        <meta charset="UTF-8" />
+        <!-- responsivness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <!-- foglio di stile -->
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+        <!-- libreria di icone -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="js/main.js"></script>   
+        <link rel="stylesheet" href="style/style.css"> 
+    </head>
+<body>
+    <header class="d-flex justify-content-center align-items-center">
+        <img src="img/final_image.png" id="headerImage">
+    </header>
+<main>
+ <!-- navigation bar -->
+ <nav class="d-flex justify-content-start align-items-center">  
+    <a href="index.html" class="possibleActive" title="Link alla home">Home</a>
+    <a href="novita.html" class="possibleActive active" title="Link al progetto">In arrivo!</a>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        Catalogo
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="possibleActive" href="list-items.html">Film</a></li>
+        <li><a class="possibleActive" href="#">Serie Tv</a></li>
+        <li><a class="possibleActive" href="#">In arrivo</a></li>
+      </ul>
+    </div>
+    <a href="attori.html" class="possibleActive" title="Link agli attori">Attori</a>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+      Altro
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="possibleActive" href="mappaluoghi.html">Mappa dei luoghi</a></li>
+      <li><a class="possibleActive" href="timeLine.html">Linea del tempo</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container my-5">
+    <h2 class="text-center mb-4">Ultime Notizie su "Odissey" di Christopher Nolan</h2>
+
+    <!-- Notizia 1 -->
+    <article class="mb-4 p-3 border-bottom">
+        <h3 class="mb-2">Nuove anticipazioni su "Odissey"</h3>
+        <img src="img/odyssey.jpg" class="img-fluid mb-2" alt="Locandina Odissey">
+        <p>Scopri i primi dettagli sulla trama e il cast del nuovo capolavoro di Nolan, che promette di essere un viaggio cinematografico rivoluzionario.</p>
+        <a href="https://www.wired.it/article/the-odyssey-christopher-nolan-cast-trama-uscita/" class="btn btn-primary">Leggi l'articolo completo</a>
+    </article>
+
+    <!-- Notizia 2 -->
+    <article class="mb-4 p-3 border-bottom">
+        <h3 class="mb-2">Dietro le quinte di "Odissey"</h3>
+        <img src="img/castOdyssey.webp" class="img-fluid mb-2" alt="Set di Odissey">
+        <p>Come è stato girato il film? Scopri i segreti della produzione e gli effetti speciali utilizzati da Nolan.</p>
+        <a href="https://movieplayer.it/news/odyssey-tutto-quello-sappiamo-nuovo-film-christopher-nolan_151155/" class="btn btn-primary">Scopri di più</a>
+    </article>
+
+    <!-- Notizia 3 con Trailer -->
+    <article class="mb-4 p-3 border-bottom">
+        <h3 class="mb-2">Guarda il Trailer Ufficiale</h3>
+        <div class="ratio ratio-16x9 mb-2">
+            <iframe src="https://youtu.be/i3j6l8zQSks?si=rQQCTAo_eDcjT4j5" allowfullscreen></iframe>
+        </div>
+        <p>Il trailer di "Odissey" è finalmente disponibile! Guarda le prime immagini e scopri di cosa parlerà il film.</p>
+        <a href="https://youtu.be/i3j6l8zQSks?si=rQQCTAo_eDcjT4j5" class="btn btn-danger">Guarda su YouTube</a>
+    </article>
+</div>
+
+
+</main>
+
+<footer>
+  <section class="container-fluid text-light py-3 bg-dark">
+      <div class="row flex">
+          <!-- Disclaimer -->
+          <div class="col-md-6 mb-3">
+              <p class="mb-2">
+                  Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici, sotto la tutela delle leggi internazionali sul copyright/trademark.
+              </p>
+              <p class="mb-0">
+                  Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.
+              </p>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-md-3 mb-3 text-center">
+              <h5 class="mb-3">Seguici</h5>
+              <a href="#" class="text-light me-3">
+                  <i class="bi bi-facebook fs-4"></i>
+              </a>
+              <a href="#" class="text-light me-3">
+                  <i class="bi bi-twitter fs-4"></i>
+              </a>
+              <a href="#" class="text-light me-3">
+                  <i class="bi bi-instagram fs-4"></i>
+              </a>
+              <a href="#" class="text-light">
+                  <i class="bi bi-youtube fs-4"></i>
+              </a>
+          </div>
+
+          <!-- Link Utili -->
+          <div class="col-md-3 mb-3 text-center">
+              <h5 class="mb-3">Link Utili</h5>
+              <ul class="list-inline mb-0">
+                  <li class="list-inline-item mx-2">
+                      <a class="text-light" href="#">Credits</a>
+                  </li>
+                  <li class="list-inline-item mx-2">
+                      <a class="text-light" href="documentazione.html">Web Project Plan</a>
+                  </li>
+                  <li class="list-inline-item mx-2">
+                      <a class="text-light" href="#">Informazioni</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </section>
+</footer>
+
+
+</body>
+</html>
